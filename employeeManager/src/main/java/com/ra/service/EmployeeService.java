@@ -8,5 +8,4 @@ public interface EmployeeService {
     List<Employee> findAll();
     Employee save(Employee employee);
     Employee findById(Integer id);
-    void delete(Integer id);
 }

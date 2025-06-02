@@ -52,7 +52,7 @@ public class EmployeeController {
         return "redirect:/";
     }
 
-    @GetMapping("/toggle-employee-status")
+    @GetMapping("/change-employee-status")
     public String toggleStatus(@RequestParam("id") Integer id) {
         Employee employee = employeeService.findById(id);
         if (employee != null) {

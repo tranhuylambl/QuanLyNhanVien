@@ -56,9 +56,9 @@
       <td th:text="${employee.phone}"></td>
       <td th:text="${employee.dateOfBirth}"></td>
       <td>
-        <a th:href="@{'/toggle-employee-status'(id=${employee.id})}">
+        <a th:href="@{'/change-employee-status'(id=${employee.id})}">
     <span th:text="${employee.status ? 'Active' : 'Inactive'}"
-          th:class="${employee.status} ? 'badge badge-success' : 'badge badge-danger'">
+          th:class="${employee.status} ? 'btn btn-success' : 'btn btn-danger'">
     </span>
         </a>
       </td>
